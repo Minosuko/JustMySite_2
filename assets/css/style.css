@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'Exo2';
+	src: URL('../font/Exo2-Regular.otf') format('opentype');
+}
+body {
+	background-image: url("../image/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Exo2';
+	margin: 0px;
+}
+p{
+	margin: 0px;
+	color: white;
+}
+p.center{
+	text-align: center;
+}
+i{
+	color: white;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+.fullsize_vbox{
+	display: flex;
+	min-height: 100vh;
+}
+.transparent_block{
+	display: block;
+	margin-top: 15%;
+	position: realtive;
+	height: 30%;
+	width: 20%;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.7px);
+	-webkit-backdrop-filter: blur(3.7px);
+	border-top: 1px solid rgba(255, 255, 255, 0.34);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.34);
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+}
+.transparent_block_inside{
+	margin-top: 1%;
+	display: block;
+	position: realtive;
+	height: 30%;
+	width: 80%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: rgba(255, 255, 255, 0);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.7px);
+	-webkit-backdrop-filter: blur(3.7px);
+	border-top: 1px solid rgba(255, 255, 255, 0.34);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.34);
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+}
+
+.mobile_trans_block{
+	width: 100%;
+}
+.profile_image_circle {
+	border: 2px solid rgba(255, 255, 255, 0.34);
+	border-radius: 50%;
+	width: 50%;
+}
+.pgload{
+	position: relative;
+	transform: translateX(-60px);
+	opacity: 0;
+	transition: 2s all ease;
+}
+
+.pgload.active{
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.bottom_text{
+	bottom: 0;
+}
